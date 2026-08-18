@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+    <meta charset="UTF-8"> <!-- Suporte a caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Alice Antunes</title> <!-- Título da aba -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        * {
+            box-sizing: border-box; /* Inclui bordas e padding no tamanho */
+            transition: all 0.3s ease; /* Efeito de transição suave */
+        }
+
+        body { /* Estila o corpo completo */
+            font-family: 'Poppins', sans-serif;
+            background: #FAF5F8; /* Cor de fundo */
+            color: #333; /* Cor do texto */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza o conteúdo */
+        }
+
+        header, .container {
+            width: 100%;
+            max-width: 750px; /* Limita a largura máxima */
+        }
+
+        header { /* Caixa do cabeçalho */
+            background: linear-gradient(135deg, #DB7093, #FF8DA1);
+            color: #FFF;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(219, 112, 147, 0.25);
+        }
+
+        header h1 { margin: 0; font-size: 2em; }
+        header p { margin: 8px 0 0; opacity: 0.95; font-weight: 300; }
+
+        .container { margin-top: 20px; }
+
+        .bloco { /* Caixa de conteúdo */
+            background: #FFF;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border-left: 6px solid #DB7093;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .bloco:hover { /* Efeito ao passar o mouse */
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #DB7093;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.3em;
+        }
+
+        .skills-grid, .contato-links { /* Alinhamento dos botões e tags */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .contato-links { gap: 12px; }
+
+        .skill-tag { /* Etiquetas de habilidades */
+            background: #FFF0F5;
+            color: #C71585;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .projeto-card { /* Cartões dos projetos */
+            background: #FAF5F8;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .projeto-card h3 { margin: 0 0 5px; color: #444; font-size: 1.05em; }
+
+        .btn-contato { /* Botões de links */
+            display: inline-block;
+            background: #DB7093;
+            color: #FFF;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+
+        .btn-contato:hover { background: #C71585; }
+    </style>
+</head> 
+
+<body> 
+
+    <header> <!-- Cabeçalho -->
+        <h1>✨ Alice Antunes</h1>
+        <p>🚀 Desenvolvedor(a) de Sistemas em Formação | SENAI CIMATEC</p>
+    </header>
+
+    <div class="container"> <!-- Container principal -->
+
+        <div class="bloco"> <!-- Bloco Sobre Mim -->
+            <h2>👤 Sobre Mim</h2>
+            <p>Olá! Sou estudante de Desenvolvimento de Sistemas no SENAI CIMATEC. Tenho paixão por criar soluções digitais, aprender novas tecnologias e transformar ideias em aplicações funcionais e atraentes.</p> 
+        </div>
+
+        <div class="bloco"> <!-- Bloco Habilidades -->
+            <h2>💡 Minhas Habilidades</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">🌐 HTML5 & CSS3</span>
+                <span class="skill-tag">⚡ JavaScript</span>
+                <span class="skill-tag">🛢️ Banco de Dados</span>
+                <span class="skill-tag">🧩 Lógica de Programação</span>
+                <span class="skill-tag">📱 Web Design</span>
+            </div>
+        </div>
+
+        <div class="bloco"> <!-- Bloco Projetos -->
+            <h2>💻 Meus Projetos</h2>
+            <div class="projeto-card">
+                <h3>🌐 Portal Informativo - SENAI</h3>
+                <p>Página responsiva criada com HTML5 e CSS3 focada em apresentar dados sobre cursos de TI.</p>
+            </div>
+            <div class="projeto-card">
+                <h3>⚙️ Sistema de Cadastro</h3>
+                <p>Aplicação interativa para gerenciamento e estruturação de dados.</p>
+            </div>
+        </div>
+
+        <div class="bloco"> <!-- Bloco Contatos -->
+            <h2>Acesse meus perfis:</h2>
+            <div class="contato-links">
+                <a href="mailto:seuemail@exemplo.com" class="btn-contato">✉️ E-mail</a>
+                <a href="https://linkedin.com/in/seuusuario" target="_blank" class="btn-contato">💼 LinkedIn</a>
+                <a href="https://github.com/seuusuario" target="_blank" class="btn-contato">🐙 GitHub</a>
+            </div>
+        </div>
+
+    </div>
+
+</body> 
+</html>
